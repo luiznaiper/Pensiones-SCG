@@ -842,14 +842,14 @@ section {
 
 .hero h2 {
   margin: 0;
-  font-size: 44px;
+  font-size: 60px;
   font-weight: 700;
 }
 
 .hero p {
   color: rgba(var(--color-default-rgb), 0.8);
   margin: 5px 0 0 0;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .hero .sign-up-form {
