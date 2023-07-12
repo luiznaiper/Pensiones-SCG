@@ -1,0 +1,104 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  --color-background: #ffffff;
+  --color-inverse: #ffffff;
+  color: var(--color-default);
+  background-color: var(--color-background);
+  padding: 15px 0;
+  transition: all 0.5s;
+  z-index: 997;
+
+  .logo {
+    img {
+      max-height: 40px;
+      margin-right: 6px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin: 0;
+      font-weight: 600;
+      color: var(--color-secondary);
+    }
+    span {
+      color: var(--color-primary);
+      font-size: 24px;
+      font-weight: 600;
+      padding-left: 3px;
+    }
+  }
+
+  .btn-getstarted, .btn-getstarted:focus {
+    color: var(--color-inverse);
+    background: var(--color-primary);
+    font-size: 14px;
+    padding: 8px 26px;
+    margin: 0;
+    border-radius: 4px;
+    transition: 0.3s;
+    &:hover {
+      color: var(--color-inverse);
+      background: rgba(var(--color-primary-rgb), .85);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .logo {
+      order: 1;
+    }
+
+    .btn-getstarted {
+      order: 2;
+      margin: 0 15px 0 0;
+      padding: 6px 20px;
+    }
+
+    .navmenu {
+      order: 3;
+    }
+  }
+  
+}
+
+/* Global Header on page scroll
+------------------------------*/
+.scrolled .header {
+  --color-background: #ffffff;
+  --color-secondary: #444444;
+  --color-nav: #444444;
+  --color-nav-hover: #e84545;
+  box-shadow: 0 0 30px 10px rgba(0,0,0, .1);
+}
+
+/* Global Scroll Margin Top
+------------------------------*/
+section {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 1199px) {
+  section {
+    scroll-margin-top: 66px;
+  }
+}
+
+/* Home Page Custom Header
+------------------------------*/
+.index-page .header {
+  --color-background: rgba(255, 255, 255, 0);
+  --color-secondary: #ffffff;
+  --color-nav: rgba(255, 255, 255, 0.515);
+  --color-nav-hover: #ffffff;
+}
+
+/* Home Page Custom Header on page scroll
+------------------------------*/
+.index-page.scrolled .header {
+  --color-background: #ffffff;
+  --color-secondary: #444444;
+  --color-nav: #444444;
+  --color-nav-hover: #d83535;
+}
