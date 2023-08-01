@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On RewriteBase / RewriteCond %{HTTP_HOST} ^pensionscg.com [NC]
+  RewriteRule ^(.*)$ https://www.pensionscg.com/$1 [L,R=301]
+</IfModule>
