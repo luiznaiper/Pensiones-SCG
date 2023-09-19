@@ -2932,3 +2932,35 @@ section {
 .whatsapp-icon {
   margin-top: 13px;
 }
+
+.form-icon {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  right: 40px;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.form-icon:hover {
+  color: var(--color-nav-dropdown-hover);
+}
+
+.form-icon span {
+  font-size: 0.7rem;
+  position: absolute;
+  right: 70px;
+  top: 10px;
+  background-color: var(--color-nav-dropdown-hover);
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 120px;
+  border-radius: 15px;
+}
