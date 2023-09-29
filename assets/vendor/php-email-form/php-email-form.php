@@ -31,11 +31,11 @@ class PHP_Email_Form {
   public $recaptcha_secret_key = false;
 
   public $error_msg = array(
-    'invalid_to_email' => 'Email to (receiving email address) is empty or invalid!',
-    'invalid_from_name' => 'From Name is empty!',
-    'invalid_from_email' => 'Email from: is empty or invalid!',
-    'invalid_subject' => 'Subject is too short or empty!',
-    'short' => 'is too short or empty!',
+    'invalid_to_email' => 'El Email no es válido o está vacío',
+    'invalid_from_name' => 'El Nombre está vacío',
+    'invalid_from_email' => 'El Emil no es válico o está vacío',
+    'invalid_subject' => 'Tu WhatsApp es incorrecto',
+    'short' => 'El mensaje es muy corto',
     'ajax_error' => 'Sorry, the request should be an Ajax POST',
     'invalid_attachment_extension' => 'File extension not allowed, please choose:',
     'invalid_attachment_size' => 'Max allowed attachment size is:'
@@ -51,7 +51,7 @@ class PHP_Email_Form {
   public function add_message($content, $label = '', $length_check = false) {
     $message = filter_var($content, FILTER_SANITIZE_FULL_SPECIAL_CHARS) . '<br>';
     if( $length_check ) {
-      if( strlen($message) < $length_check + 4 ) {
+      if( strlen($message) < $length_check + 2 ) {
         $this->error .=  $label . ' ' . $this->error_msg['short'] . '<br>';
         return;
       }
