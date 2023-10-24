@@ -8,9 +8,9 @@
   }
 
   // Establecer la información del remitente y el asunto.
-  $from_name = "Formulario de Simulador de Pensión";
+  $from_name = "Formulario de Simulador";
   $from_email = "no-reply@yourdomain.com"; // Aquí puedes poner una dirección de correo genérica de tu dominio.
-  $subject = "Nuevo envío desde el Simulador de Pensión";
+  $subject = "Nuevo envío desde el Simulador";
 
   // Construir el cuerpo del mensaje.
   $message = "Nombre completo: " . $_POST['fullName'] . "\n";
