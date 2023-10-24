@@ -28,7 +28,7 @@
 
   // Enviar el correo.
   if(mail($receiving_email_address, $subject, $message, $headers)) {
-    echo "Formulario enviado con éxito.";
+    echo "Formulario enviado con éxito. ¡Nos contactaremos contigo!";
   } else {
     echo "Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.";
   }
