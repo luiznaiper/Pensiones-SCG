@@ -2964,3 +2964,19 @@ section {
   width: 120px;
   border-radius: 15px;
 }
+
+.hero-btn-pensiones {
+  margin-top: 4rem;
+}
+
+.simulador-btn {
+  background-color: #fff;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.simulador-btn:hover {
+  background-color: var(--color-nav-hover);
+  color: #fff;
+}
