@@ -8,7 +8,7 @@
   $subject = "Nuevo envío desde el Simulador de Pensión";
 
   // Verificación básica para asegurar que todos los campos requeridos están presentes.
-  $required_fields = ['fullName', 'birthDate', 'city', 'whatsapp'];
+  $required_fields = ['fullName', 'birthDate',  'whatsapp'];
   foreach ($required_fields as $field) {
     if (empty($_POST[$field])) {
       // Puedes cambiar esto por un manejo de error más sofisticado si lo deseas.
