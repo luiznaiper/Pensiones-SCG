@@ -1,6 +1,6 @@
 <?php
   // Correo al que se enviarán los datos del formulario.
-  $receiving_email_address = 'plusmarketinglyl@gmail.com';
+  $receiving_email_address = 'clientes@plusmarketing.mx';
 
   // Establecer la información del remitente y el asunto.
   $from_name = "Formulario de Simulador";
